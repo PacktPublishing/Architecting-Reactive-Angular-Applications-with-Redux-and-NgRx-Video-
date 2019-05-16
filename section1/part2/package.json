@@ -1,0 +1,14 @@
+{
+  "name": "part2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "immutable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:mutable": "node mutable.js",
+    "start:immutable": "node immutable.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,7 @@
+<h1>Adding products</h1>
+<input placeholder="name" [(ngModel)]="name" type="text">
+<button (click)="add()">Add</button>
+
+<div *ngFor="let product of products$">
+  {{product.name}}
+</div>

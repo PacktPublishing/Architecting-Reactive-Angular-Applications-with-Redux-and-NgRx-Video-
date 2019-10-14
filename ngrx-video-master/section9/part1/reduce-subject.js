@@ -1,2 +1,0 @@
-// use the scan operator
-

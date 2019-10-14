@@ -1,9 +1,0 @@
-<div class="products">
-  <div>
-    <input [(ngModel)]="newProduct" placeholder="Enter product name" type="text" />
-  </div>
-
-  <div class="product" *ngFor="let product of products$ | async">
-    {{product.title}}
-  </div>
-</div> 

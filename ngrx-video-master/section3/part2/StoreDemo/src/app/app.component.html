@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <input type="text" [(ngModel)]="newProduct" placeholder="new product" />
+  <button (click)="save()">Save</button>
+
+  <div *ngIf="selectedProduct">
+    <input type="text" [(ngModel)]="selectedProduct.name" >
+    <button (click)="update()">Update</button>
+  </div>
+
+  <div *ngFor="let product of products$ | async">
+    {{product.name}} 
+    <button (click)="select(product)">Select</button>
+    <button (click)="delete()" >Delete</button>
+  </div>
+</div>

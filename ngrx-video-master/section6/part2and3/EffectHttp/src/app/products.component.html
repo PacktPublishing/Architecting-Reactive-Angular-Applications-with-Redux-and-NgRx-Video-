@@ -1,0 +1,11 @@
+<h2>Products list page</h2>
+
+<div *ngIf="error$ | async as error" style="border: solid 2px red; padding: 10px; color:red; font-weight: bold">
+  {{error}}
+</div>
+
+<div *ngFor="let product of products$ | async">
+  {{ product.name }}
+</div>
+
+<button (click)="save()">Save</button>

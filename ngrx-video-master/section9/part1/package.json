@@ -1,0 +1,23 @@
+{
+  "name": "part1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:redux-stream": "node redux-stream.js",
+    "start:redux-stream-improved": "node redux-stream-improved.js",
+    "start:scan": "node scan.js",
+    "start:redux": "node redux.js",
+    "start:lost-data": "node app2.js",
+    "start:behavior-subject": "node app3.js",
+    "start:store": "node app4.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.4.0"
+  }
+}

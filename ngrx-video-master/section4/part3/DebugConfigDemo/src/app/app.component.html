@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  {{counter$ | async }} <button (click)="increment()">Increment</button>
+  <input type="text" [(ngModel)]="newProduct" /><button (click)="add()">Add</button> 
+  <div *ngFor="let product of products$ | async">
+    {{product}}
+  </div> 
+</div>
+

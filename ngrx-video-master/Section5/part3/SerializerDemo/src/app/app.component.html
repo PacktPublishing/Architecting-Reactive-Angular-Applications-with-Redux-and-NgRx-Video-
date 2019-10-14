@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+{{ counter$ | async }}
+<div>
+  <a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+</div>
+<div>
+  <a [routerLink]="['/about']" routerLinkActive="router-link-active">About</a>
+</div>
+<div>
+  <a [routerLink]="['/products']" routerLinkActive="router-link-active">Products</a>
+</div>
+
+<button (click)="increment()">Increment</button>
+
+<router-outlet></router-outlet>
